@@ -1,0 +1,332 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f496;
+  color: white;
+}
+*{
+  text-decoration: none;
+  color: white;
+}
+h1, h2 ,h3{
+  font-weight: bold;
+}
+/* Header styles */
+.header{
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo{
+font-size: 24px;
+color: white;
+}
+.header nav{
+  display: flex;
+  gap: 40px;
+}
+.header nav  a{
+  color: white;
+  font-weight: bold;
+}
+.header nav a:hover{
+  text-decoration: underline;
+}
+/* footer style */
+footer{
+  background-color:#333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer p{
+  margin: 0;
+}
+/* home page style */
+/* Fade-in animation for the form title */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero{
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding-left: 60px;
+}
+.hero h1{
+  font-size: 48px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,5);
+  color: black;
+}
+.hero p{
+   font-size: 25px;
+   margin-top: 10px;
+   color: black;
+}
+.hero button{
+  margin-top: 20px;
+  padding: 10px 20px ;
+  background-color: black;
+  color: wheat;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor:pointer;
+  
+ transition: background-color 0.3 ease; 
+}
+.hero button:hover{
+    background-color: black;
+}
+/* about page styles */
+/* Fade-in animation for the form title */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.about{
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+}
+.about-content{
+  max-width: 500px;
+  text-align: left;
+  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+}
+.about-content p{
+ padding-top: 20px;
+
+}
+/* watches styles */
+.watches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 50px;
+  }
+
+.watch-card {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Thoda subtle shadow for a softer look */
+  text-align: center;
+  overflow: hidden; /* Ensure that no content exceeds the border radius */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.watch-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for image on hover */
+}
+
+.watch-card h3 {
+  margin-top: 10px;
+  font-size: 18px; /* Ensure the heading is prominent */
+}
+
+.watch-card p {
+  color: #333;
+  font-size: 14px;
+}
+
+.watch-card .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.watch-card button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.watch-card button:hover {
+  background-color: #444; /* Subtle change on hover */
+  transform: scale(1.05); /* Slight zoom effect when hovering */
+}
+
+.watch-card:hover {
+  transform: scale(1.05); /* Zoom effect when the whole card is hovered */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .watches {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .watches {
+    grid-template-columns: 1fr; /* 1 column on smaller screens */
+  }
+}
+
+/* Main container for the page */
+.contact-container {
+  background-image: url('/bg1.jpg');  /* Background image */
+  background-size: cover;  /* Image ko cover karne ke liye */
+  background-position: center;  /* Center mein position karna */
+  height: 100vh;  /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Contact form styling */
+.contact-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Form inputs and textarea styling */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc; /* Lighter border color */
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;  /* Light background color */
+}
+
+/* Button styling */
+.contact-form button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.contact-form button:hover {
+  background-color: #333;  /* Darken the button color on hover */
+}
+
+/* Fade-in animation for the form title */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out; /* Fade-in effect for the heading */
+}
+
+/* fade-in Animation */
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translate(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  
+  }
+}
+.fadeIn{
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+/* Responsive style */
+@media(max-width:768px){
+  .header{
+    flex-direction: column;
+    text-align: center;
+  }
+  .header .logo{
+    margin-bottom: 10px;
+  }
+  .header nav{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .hero{
+    height: 70vh;
+    padding: 20px;
+    align-items: center;
+  }
+  .hero h1{
+    font-size: 36px;
+  }
+  .hero p{
+    font-size: 18px;
+  }
+  .hero button{
+    width: 100%;
+    padding: 12px;
+   font-size: 16px;
+  }
+  .watches{
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+  .about{
+    padding: 40px 20px;
+    height: auto;
+  }
+  .about-content{
+    width: 100%;
+  }
+  .contact-form{
+    margin: 20px;
+    padding: 20px;
+  }
+}
