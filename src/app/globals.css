@@ -73,19 +73,20 @@ footer p{
 }
 .hero h1{
   font-size: 48px;
-  text-shadow: 2px 2px 5px rgba(0,0,0,5);
+  text-shadow: white;
   color: black;
 }
 .hero p{
-   font-size: 25px;
+   font-size:28px;
    margin-top: 10px;
    color: black;
+   font-weight: 900;
 }
 .hero button{
   margin-top: 20px;
   padding: 10px 20px ;
   background-color: black;
-  color: wheat;
+  color: white;
   border: none;
   font-weight: bold;
   border-radius: 5px;
@@ -213,6 +214,12 @@ footer p{
   align-items: center;
   color: white;
 }
+textarea{
+  color:black;
+}
+input{
+  color: black;
+}
 
 /* Contact form styling */
 .contact-form {
@@ -233,7 +240,7 @@ footer p{
   border: 1px solid #ccc; /* Lighter border color */
   border-radius: 5px;
   font-size: 1rem;
-  background-color: #f9f9f9;  /* Light background color */
+  background-color: #ccc;  /* Light background color */
 }
 
 /* Button styling */
@@ -294,7 +301,7 @@ footer p{
     margin-bottom: 10px;
   }
   .header nav{
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     align-items: center;
   }

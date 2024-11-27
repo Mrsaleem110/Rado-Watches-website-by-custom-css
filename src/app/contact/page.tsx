@@ -10,13 +10,13 @@ const Contact = () => {
       height: '100vh', // Full viewport height
       background:'transparent-400'
     }}>
-        <h2 className='fade-in'>Contact Us</h2>
-        <form>
+        <h2 className='fade-in' >Contact Us</h2>
+        <form action="mailto:sm6928234@gmail.com" method="POST">
           <input type='text' placeholder='Full Name' required />
           <input type='email' placeholder='Email Address' required />
           <input type='number' placeholder='Phone Number' required />
           <textarea placeholder='Your Message' rows={5}></textarea>
-          <button type='submit'>Send Message</button>
+          <button type='submit' >Send Message</button>
         </form>
       </section>
     </div>
